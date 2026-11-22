@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { TinyButton, TinySwitch } from '@opentiny/vue'
+import { TinyButton, TinyDatePicker, TinySwitch } from '@opentiny/vue'
 import MultiCompareChart from '@/components/charts/MultiCompareChart.vue'
 import { useStockStore } from '@/stores/stockStore'
 import { buildMultiCompareData } from '@/utils/cycleMath'
@@ -32,6 +32,16 @@ const includeShIndex = ref(true)
 const todayStr = new Date().toISOString().slice(0, 10)
 const startDate = ref(`${new Date().getFullYear()}-01-01`)
 const endDate = ref(todayStr)
+
+const dateRange = computed<string[]>({
+  get: () => [startDate.value, endDate.value],
+  set: (val: string[] | null) => {
+    if (Array.isArray(val) && val.length === 2 && val[0] && val[1]) {
+      startDate.value = String(val[0]).slice(0, 10)
+      endDate.value = String(val[1]).slice(0, 10)
+    }
+  }
+})
 
 function applyPresetSector(sectorId?: string) {
   const target =
@@ -201,9 +211,18 @@ function formatPct(val: number | null | undefined) {
           </div>
 
           <div class="date-inputs">
-            <input v-model="startDate" type="date" class="date-input" />
-            <span>至</span>
-            <input v-model="endDate" type="date" class="date-input" />
+            <tiny-date-picker
+              v-model="dateRange"
+              type="daterange"
+              size="small"
+              format="yyyy-MM-dd"
+              value-format="yyyy-MM-dd"
+              range-separator="至"
+              start-placeholder="开始日期"
+              end-placeholder="结束日期"
+              :clearable="false"
+              style="width: 245px"
+            />
           </div>
 
           <label class="bench-switch">
@@ -404,18 +423,6 @@ function formatPct(val: number | null | undefined) {
 .date-inputs {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  color: #64748b;
-}
-
-.date-input {
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  padding: 4px 8px;
-  font-size: 12px;
-  color: #0f172a;
-  background: #ffffff;
 }
 
 .bench-switch {
