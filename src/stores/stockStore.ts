@@ -276,7 +276,7 @@ export const useStockStore = defineStore('stock', () => {
 
   async function saveSector(sector: SectorConfig) {
     const idx = sectors.value.findIndex((s) => s.id === sector.id)
-    const cloned = structuredClone(sector)
+    const cloned = JSON.parse(JSON.stringify(sector)) as SectorConfig
     if (idx >= 0) {
       sectors.value[idx] = cloned
     } else {
@@ -293,13 +293,11 @@ export const useStockStore = defineStore('stock', () => {
   }
 
   async function persistAllSectors() {
-    await stockDb.saveAllCustomSectors(
-      sectors.value.map((s) => JSON.parse(JSON.stringify(s)))
-    )
+    await stockDb.saveAllCustomSectors(sectors.value)
   }
 
   async function resetToDefaultSectors() {
-    sectors.value = structuredClone(defaultSectors.value)
+    sectors.value = JSON.parse(JSON.stringify(defaultSectors.value)) as SectorConfig[]
     await stockDb.saveAllCustomSectors([])
     await refreshDbStats()
   }

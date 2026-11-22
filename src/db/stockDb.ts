@@ -56,6 +56,10 @@ function getDb() {
   return dbPromise
 }
 
+function toPlain<T>(value: T): T {
+  return JSON.parse(JSON.stringify(value)) as T
+}
+
 export const stockDb = {
   async getKline(symbol: string): Promise<CachedStockKline | undefined> {
     const db = await getDb()
@@ -64,7 +68,7 @@ export const stockDb = {
 
   async putKline(data: CachedStockKline): Promise<void> {
     const db = await getDb()
-    await db.put('klines', data)
+    await db.put('klines', toPlain(data))
   },
 
   async getAllKlines(): Promise<CachedStockKline[]> {
@@ -84,7 +88,7 @@ export const stockDb = {
 
   async saveCustomSector(sector: SectorConfig): Promise<void> {
     const db = await getDb()
-    await db.put('sectors', sector)
+    await db.put('sectors', toPlain(sector))
   },
 
   async deleteCustomSector(id: string): Promise<void> {
@@ -94,9 +98,10 @@ export const stockDb = {
 
   async saveAllCustomSectors(sectors: SectorConfig[]): Promise<void> {
     const db = await getDb()
+    const plainSectors = toPlain(sectors)
     const tx = db.transaction('sectors', 'readwrite')
     await tx.store.clear()
-    for (const sector of sectors) {
+    for (const sector of plainSectors) {
       await tx.store.put(sector)
     }
     await tx.done
@@ -109,14 +114,14 @@ export const stockDb = {
 
   async saveNote(note: StockNote): Promise<void> {
     const db = await getDb()
-    await db.put('notes', note)
+    await db.put('notes', toPlain(note))
   },
 
   async saveRealtimeSnapshot(quotes: Record<string, RealtimeQuote>): Promise<void> {
     const db = await getDb()
     await db.put('meta', {
       key: 'realtime_snapshot',
-      value: quotes,
+      value: toPlain(quotes),
       updatedAt: new Date().toISOString()
     })
   },
