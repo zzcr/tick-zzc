@@ -4,10 +4,11 @@ import { TinyAlert, TinyButton, TinySwitch } from '@opentiny/vue'
 import { useStockStore } from '@/stores/stockStore'
 import DataManagerView from '@/views/DataManagerView.vue'
 import RadarDashboard from '@/views/RadarDashboard.vue'
+import RegimeLeaderView from '@/views/RegimeLeaderView.vue'
 import SectorCycleView from '@/views/SectorCycleView.vue'
 import StockCompareView from '@/views/StockCompareView.vue'
 
-type TabKey = 'radar' | 'sector' | 'compare' | 'manager'
+type TabKey = 'radar' | 'sector' | 'compare' | 'regime' | 'manager'
 
 const store = useStockStore()
 const activeTab = ref<TabKey>('radar')
@@ -85,6 +86,13 @@ onBeforeUnmount(() => {
           </button>
           <button
             class="nav-item"
+            :class="{ active: activeTab === 'regime' }"
+            @click="activeTab = 'regime'"
+          >
+            牛熊与龙头轮动
+          </button>
+          <button
+            class="nav-item"
             :class="{ active: activeTab === 'manager' }"
             @click="activeTab = 'manager'"
           >
@@ -141,6 +149,7 @@ onBeforeUnmount(() => {
           v-if="activeTab === 'compare'"
           :preset-sector-id="comparePresetSectorId"
         />
+        <RegimeLeaderView v-if="activeTab === 'regime'" />
         <DataManagerView v-if="activeTab === 'manager'" />
       </template>
     </main>
