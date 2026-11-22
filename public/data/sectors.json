@@ -1,0 +1,120 @@
+{
+  "benchmarks": [
+    {
+      "symbol": "sh000001",
+      "code": "000001",
+      "market": "sh",
+      "name": "上证指数"
+    },
+    {
+      "symbol": "sh000300",
+      "code": "000300",
+      "market": "sh",
+      "name": "沪深300"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "sports",
+      "name": "体育赛事",
+      "tag": "春季躁动 · 赛事催化",
+      "color": "#e11d48",
+      "buyMonths": [12, 1],
+      "sellMonths": [4, 5, 6],
+      "defaultCycleStartMonth": 12,
+      "logic": "冬季赛事淡季常现筹码低谷（12月~次年1月），开春后叠加马拉松/欧洲杯/奥运会/全民健身政策预期，4~6月易现阶段高点。",
+      "stocks": [
+        { "symbol": "sz300651", "code": "300651", "market": "sz", "name": "金陵体育" },
+        { "symbol": "sh605299", "code": "605299", "market": "sh", "name": "舒华体育" },
+        { "symbol": "sh605099", "code": "605099", "market": "sh", "name": "共创草坪" },
+        { "symbol": "sz002858", "code": "002858", "market": "sz", "name": "力盛体育" },
+        { "symbol": "sh600158", "code": "600158", "market": "sh", "name": "中体产业" }
+      ]
+    },
+    {
+      "id": "ice_snow",
+      "name": "冰雪经济",
+      "tag": "夏伏冬收 · 强季节性",
+      "color": "#0284c7",
+      "buyMonths": [7, 8],
+      "sellMonths": [11, 12],
+      "defaultCycleStartMonth": 7,
+      "logic": "夏季7~8月旅游淡季且市场关注度低，筹码出清；10月下旬起随北方降雪、雪场开板与冬季冰雪旅游旺季催化，11~12月兑现高点。",
+      "stocks": [
+        { "symbol": "sh603099", "code": "603099", "market": "sh", "name": "长白山" },
+        { "symbol": "sh600593", "code": "600593", "market": "sh", "name": "大连圣亚" },
+        { "symbol": "sz000530", "code": "000530", "market": "sz", "name": "冰山冷热" },
+        { "symbol": "sz002639", "code": "002639", "market": "sz", "name": "雪人股份" },
+        { "symbol": "sz300005", "code": "300005", "market": "sz", "name": "探路者" }
+      ]
+    },
+    {
+      "id": "natural_gas",
+      "name": "天然气供暖",
+      "tag": "淡季储气 · 寒潮催化",
+      "color": "#ea580c",
+      "buyMonths": [5, 6, 7],
+      "sellMonths": [10, 11, 12],
+      "defaultCycleStartMonth": 5,
+      "logic": "春夏交接用气淡季易出阶段低点，秋季补库及北方供暖季临近叠加寒潮/气价波动，10~12月往往迎来波段拉升。",
+      "stocks": [
+        { "symbol": "sh603393", "code": "603393", "market": "sh", "name": "新天然气" },
+        { "symbol": "sh605090", "code": "605090", "market": "sh", "name": "九丰能源" },
+        { "symbol": "sz002911", "code": "002911", "market": "sz", "name": "佛燃能源" },
+        { "symbol": "sh600903", "code": "600903", "market": "sh", "name": "贵州燃气" },
+        { "symbol": "sh600803", "code": "600803", "market": "sh", "name": "新奥股份" }
+      ]
+    },
+    {
+      "id": "coal",
+      "name": "煤炭能源",
+      "tag": "迎峰度夏 · 迎峰度冬",
+      "color": "#475569",
+      "buyMonths": [3, 4, 9],
+      "sellMonths": [6, 7, 11, 12],
+      "defaultCycleStartMonth": 3,
+      "logic": "兼具高股息与双旺季周期：春季3~4月淡季回调后博弈迎峰度夏（6~7月）；9月小淡季回调后博弈冬季保供与高分红预期。",
+      "stocks": [
+        { "symbol": "sh601088", "code": "601088", "market": "sh", "name": "中国神华" },
+        { "symbol": "sh601225", "code": "601225", "market": "sh", "name": "陕西煤业" },
+        { "symbol": "sh600188", "code": "600188", "market": "sh", "name": "兖矿能源" },
+        { "symbol": "sz000983", "code": "000983", "market": "sz", "name": "山西焦煤" },
+        { "symbol": "sh601898", "code": "601898", "market": "sh", "name": "中煤能源" }
+      ]
+    },
+    {
+      "id": "defense",
+      "name": "国防军工",
+      "tag": "预算节点 · 航展催化",
+      "color": "#16a34a",
+      "buyMonths": [1, 2, 4],
+      "sellMonths": [7, 8, 11],
+      "defaultCycleStartMonth": 1,
+      "logic": "年初及一季报前后情绪易偏冷，年中建军节与中报订单交付（7~8月）以及秋季珠海航展（双数年11月）常形成阶段高点。",
+      "stocks": [
+        { "symbol": "sh600760", "code": "600760", "market": "sh", "name": "中航沈飞" },
+        { "symbol": "sh600893", "code": "600893", "market": "sh", "name": "航发动力" },
+        { "symbol": "sz002179", "code": "002179", "market": "sz", "name": "中航光电" },
+        { "symbol": "sz000768", "code": "000768", "market": "sz", "name": "中航西飞" },
+        { "symbol": "sh600150", "code": "600150", "market": "sh", "name": "中国船舶" }
+      ]
+    },
+    {
+      "id": "movie",
+      "name": "电影院线",
+      "tag": "档期博弈 · 买预期卖事实",
+      "color": "#7c3aed",
+      "buyMonths": [4, 5, 10, 11],
+      "sellMonths": [1, 2, 7, 8],
+      "defaultCycleStartMonth": 10,
+      "logic": "典型档期题材：春节档前（10~12月）与暑期档前（4~5月）低位潜伏，通常在档期临近预售放量（1~2月 / 7~8月）兑现离场。",
+      "stocks": [
+        { "symbol": "sz300251", "code": "300251", "market": "sz", "name": "光线传媒" },
+        { "symbol": "sh600977", "code": "600977", "market": "sh", "name": "中国电影" },
+        { "symbol": "sz002739", "code": "002739", "market": "sz", "name": "万达电影" },
+        { "symbol": "sh603103", "code": "603103", "market": "sh", "name": "横店影视" },
+        { "symbol": "sz300133", "code": "300133", "market": "sz", "name": "华策影视" }
+      ]
+    }
+  ]
+}
