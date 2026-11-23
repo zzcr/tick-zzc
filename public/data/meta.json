@@ -1,7 +1,7 @@
 {
-  "version": "2026-11-20-1795342204532",
-  "updatedAt": "2026-11-22T10:10:04.532Z",
-  "latestTradeDate": "2026-11-20",
+  "version": "2026-11-23-1795464403715",
+  "updatedAt": "2026-11-23T20:06:43.715Z",
+  "latestTradeDate": "2026-11-23",
   "totalStocks": 32,
   "failedCount": 0,
   "stocks": [
@@ -9,257 +9,257 @@
       "symbol": "sh000001",
       "name": "上证指数",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh000300",
       "name": "沪深300",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh600150",
       "name": "中国船舶",
       "source": "eastmoney",
-      "count": 1886,
+      "count": 1887,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh600158",
       "name": "中体产业",
       "source": "eastmoney",
-      "count": 1910,
+      "count": 1911,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh600188",
       "name": "兖矿能源",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh600593",
       "name": "大连圣亚",
       "source": "eastmoney",
-      "count": 1900,
+      "count": 1901,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh600760",
       "name": "中航沈飞",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh600803",
       "name": "新奥股份",
       "source": "eastmoney",
-      "count": 1893,
+      "count": 1894,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh600893",
       "name": "航发动力",
       "source": "eastmoney",
-      "count": 1901,
+      "count": 1902,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh600903",
       "name": "贵州燃气",
       "source": "eastmoney",
-      "count": 1906,
+      "count": 1907,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh600977",
       "name": "中国电影",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh601088",
       "name": "中国神华",
       "source": "eastmoney",
-      "count": 1902,
+      "count": 1903,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh601225",
       "name": "陕西煤业",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh601898",
       "name": "中煤能源",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh603099",
       "name": "长白山",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh603103",
       "name": "横店影视",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh603393",
       "name": "新天然气",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh605090",
       "name": "九丰能源",
       "source": "eastmoney",
-      "count": 1322,
+      "count": 1323,
       "firstDate": "2021-05-25",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh605099",
       "name": "共创草坪",
       "source": "eastmoney",
-      "count": 1486,
+      "count": 1487,
       "firstDate": "2020-09-30",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sh605299",
       "name": "舒华体育",
       "source": "eastmoney",
-      "count": 1438,
+      "count": 1439,
       "firstDate": "2020-12-15",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz000530",
       "name": "冰山冷热",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz000768",
       "name": "中航西飞",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz000983",
       "name": "山西焦煤",
       "source": "eastmoney",
-      "count": 1902,
+      "count": 1903,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz002179",
       "name": "中航光电",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz002639",
       "name": "雪人股份",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz002739",
       "name": "万达电影",
       "source": "eastmoney",
-      "count": 1906,
+      "count": 1907,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz002858",
       "name": "力盛体育",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz002911",
       "name": "佛燃能源",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz300005",
       "name": "探路者",
       "source": "eastmoney",
-      "count": 1909,
+      "count": 1910,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz300133",
       "name": "华策影视",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz300251",
       "name": "光线传媒",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     },
     {
       "symbol": "sz300651",
       "name": "金陵体育",
       "source": "eastmoney",
-      "count": 1912,
+      "count": 1913,
       "firstDate": "2019-01-02",
-      "lastDate": "2026-11-20"
+      "lastDate": "2026-11-23"
     }
   ]
 }
